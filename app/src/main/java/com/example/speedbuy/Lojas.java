@@ -2,10 +2,13 @@ package com.example.speedbuy;
 
 public class Lojas {
     private String nome;
-    private int foto;
+    private String foto;
     private String estrela;
 
-
+    public Lojas(String nome, String foto){
+        this.nome = nome;
+        this.foto = foto;
+    }
     public String getNome() {
         return nome;
     }
@@ -22,11 +25,12 @@ public class Lojas {
         this.estrela = estrela;
     }
 
-    public int getFoto() {
+
+    public String getFoto() {
         return foto;
     }
 
-    public void setFoto(int foto) {
+    public void setFoto(String foto) {
         this.foto = foto;
     }
 }
