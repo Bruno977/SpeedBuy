@@ -14,8 +14,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class list_view extends AppCompatActivity {
 
-    int [] imagesPerfil = {R.drawable.infoatual};
-    String [] nomeLoja = {"Info Atual"};
+    int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
+    String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
