@@ -4,10 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".list_view">
     <ListView
         android:id="@+id/list_view"
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></ListView>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.speedbuy.BottomNavigattion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_bottom_navigattion"
+        android:layout_gravity="bottom"/>
 </LinearLayout>
