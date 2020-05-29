@@ -6,9 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.speedbuy.BottomNavigattion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_bottom_navigattion"
+        android:layout_gravity="bottom"/>
+=======
         android:text="Hello World!" />
 
+>>>>>>> 8380df92122b98cf9964148e74f1759ac47f9fdd
 </LinearLayout>
