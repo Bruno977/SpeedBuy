@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.speedbuy.fragments.ListViewOpen;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class list_view extends AppCompatActivity {
@@ -26,16 +28,17 @@ public class list_view extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
 
         ListView listView = findViewById(R.id.list_view);
+
+        CustomAdapter customAdapter = new CustomAdapter();
+        listView.setAdapter(customAdapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Intent i = new Intent(this, );
-                startActivity(i);
+                getSupportFragmentManager().beginTransaction().add(R.id.linear_list, new ListViewOpen()).commit();
             }
         });
-        CustomAdapter customAdapter = new CustomAdapter();
-        listView.setAdapter(customAdapter);
+
     }
     class  CustomAdapter extends BaseAdapter{
 
