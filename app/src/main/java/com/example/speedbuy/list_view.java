@@ -2,9 +2,12 @@ package com.example.speedbuy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -14,8 +17,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class list_view extends AppCompatActivity {
 
-    int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
-    String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia"};
+    int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia, R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
+    String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +26,14 @@ public class list_view extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
 
         ListView listView = findViewById(R.id.list_view);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+                Intent i = new Intent(this, );
+                startActivity(i);
+            }
+        });
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
     }
