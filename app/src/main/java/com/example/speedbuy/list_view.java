@@ -21,7 +21,8 @@ public class list_view extends AppCompatActivity {
 
     int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia, R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
     String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia"};
-
+    String [] textStar = {" 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios", " 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios", " 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios"};
+    String [] textTime = {" 20-30m", " 30-60m", " 1-2h"," 20-30m"," 20-30m", " 30-60m", " 1-2h"," 20-30m"," 20-30m", " 30-60m", " 1-2h"," 20-30m"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,10 +63,14 @@ public class list_view extends AppCompatActivity {
             View view = getLayoutInflater().inflate(R.layout.itens_list_view,null);
 
             CircleImageView circleImageView = view.findViewById(R.id.circle_image);
-            TextView textView = view.findViewById(R.id.text_nome);
+            TextView textViewNomeLoja = view.findViewById(R.id.text_nome);
+            TextView textViewStar = view.findViewById(R.id.text_star);
+            TextView textViewTime = view.findViewById(R.id.text_time);
 
             circleImageView.setImageResource(imagesPerfil[i]);
-            textView.setText(nomeLoja[i]);
+            textViewNomeLoja.setText(nomeLoja[i]);
+            textViewStar.setText(textStar[i]);
+            textViewTime.setText(textTime[i]);
 
             return view;
         }
