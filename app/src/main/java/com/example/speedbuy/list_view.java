@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.speedbuy.fragments.InfoAtual;
 import com.example.speedbuy.fragments.ListViewOpen;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -37,7 +38,7 @@ public class list_view extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                getSupportFragmentManager().beginTransaction().add(R.id.linear_list, new ListViewOpen()).commit();
+                getSupportFragmentManager().beginTransaction().add(R.id.linear_list, new InfoAtual()).commit();
             }
         });
 
