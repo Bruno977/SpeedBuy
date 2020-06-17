@@ -12,11 +12,11 @@
     <ListView
         android:id="@+id/list_view"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:divider="#FBFBFB"
         android:dividerHeight="1dp"
-        android:listSelector="@drawable/list_selector" />
+        android:listSelector="@drawable/list_selector"></ListView>
 
     <fragment
         android:id="@+id/fragment2"
@@ -25,4 +25,8 @@
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_bottom_navigattion"
         android:layout_gravity="bottom"/>
+
+
+
+
 </LinearLayout>
