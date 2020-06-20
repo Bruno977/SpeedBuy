@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Speed Buy</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Teste</string>
     <string-array name="lojas">
         <item>Info Atual</item>
     </string-array>
