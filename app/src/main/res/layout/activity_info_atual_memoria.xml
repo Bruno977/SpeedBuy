@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoatual.InfoAtualMemoria">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/memoria"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Memória HyperX Fury, 8GB, 3000MHz, DDR4, CL15, Preto - HX430C15FB3/8"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="Melhore a performance de seu PC com o HyperX Fury DDR4! Com overclock automático e funcionalidade Plug e Play essa memória foi projetada para placas-mãe com chipsets série 200 e X99, gerando um ótimo processamento para você enfrentar novas batalhas! Com capacidade de 4GB a 64BG é ideal para renderizações 3D, jogos, edição de vídeos e outros processos. Aproveite o melhor upgrade para seu PC sem travamentos ou ghosting. "></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:text="R$ 280,00 à vista"></TextView>
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verdeBotao"
+            android:textColor="@color/colorWhite"
+            android:text="Adicionar no carrinho"></Button>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
