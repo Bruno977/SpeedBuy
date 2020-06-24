@@ -1,12 +1,7 @@
 <resources>
     <string name="app_name">Speed Buy</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-<<<<<<< HEAD
-=======
+    <string name="hello_blank_fragment">Teste</string>
     <string-array name="lojas">
         <item>Info Atual</item>
     </string-array>
->>>>>>> 8380df92122b98cf9964148e74f1759ac47f9fdd
 </resources>

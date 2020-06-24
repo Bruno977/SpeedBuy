@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".list_view">
+        <activity android:name=".infoatual.InfoAtualMemoria"></activity>
+        <activity android:name=".CasasBahia" />
+        <activity android:name=".Leader" />
+        <activity android:name=".Americanas" />
+        <activity android:name=".InfoAtual" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ListViewHome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Home"
+        android:id="@+id/home"
         android:icon="@drawable/ic_home_black_24dp"
         />
 
     <item android:title="Busca"
+        android:id="@+id/search"
         android:icon="@drawable/ic_search_black_24dp"
         />
 
     <item android:title="Carrinho"
+        android:id="@+id/car"
         android:icon="@drawable/ic_local_grocery_store_black_24dp"/>
 
     <item android:title="Perfil"
+        android:id="@+id/perfil"
         android:icon="@drawable/ic_person_black_24dp"/>
 
 

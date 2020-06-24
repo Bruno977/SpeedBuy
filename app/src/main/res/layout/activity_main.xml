@@ -6,14 +6,4 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <fragment
-        android:id="@+id/fragment2"
-        android:name="com.example.speedbuy.BottomNavigattion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_bottom_navigattion"
-        android:layout_gravity="bottom"/>
-
 </LinearLayout>
