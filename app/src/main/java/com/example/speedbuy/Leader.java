@@ -13,10 +13,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Leader extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.blusasocial, R.drawable.camisabrasil, R.drawable.blusasocial1};
-    String [] nomeProduto = {"Blusa", "Camisa", "Blusa"};
-    String [] descricaoProduto = {"Blusa Social", "Camisa Brasil", "Blusa Social"};
-    String [] precoProduto = {"R$ 100,00", "R$ 50,00" ,"R$ 120,00"};
+    int [] imageProduto = {R.drawable.blusasocial, R.drawable.camisabrasil, R.drawable.blusasocial1, R.drawable.calca1, R.drawable.calca2, R.drawable.vasco1, R.drawable.vasco2, R.drawable.vasco3};
+    String [] nomeProduto = {"Blusa", "Camisa", "Blusa", "Calça", "Calça", "Camisa", "Camisa", "Camisa"};
+    String [] descricaoProduto = {"Blusa Social", "Camisa Brasil", "Blusa Social", "Calça", "Calça", "Camisa do vasco", "Camisa do vasco", "Camisa do vasco"};
+    String [] precoProduto = {"R$ 100,00", "R$ 50,00" ,"R$ 120,00", "R$ 100,00", "R$ 120,00", "R$ 120,00", "R$ 120,00", "R$ 150,00"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
