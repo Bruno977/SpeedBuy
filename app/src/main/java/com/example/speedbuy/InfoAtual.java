@@ -12,15 +12,16 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.speedbuy.infoatual.InfoAtualMemoria;
+import com.example.speedbuy.infoatual.InfoAtualPcGamer;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class InfoAtual extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.memoria, R.drawable.pc, R.drawable.headset};
-    String [] nomeProduto = {"Memoria DDR4", "PC gamer", "HeadSet"};
-    String [] descricaoProduto = {"Memoria HyperX DDR4 8GB", "PC gamer i7, GTX 1080, 16GB DDR4", "HeadSet HyperX"};
-    String [] precoProduto = {"R$ 280,00", "R$ 1.800,000" ,"R$ 480,00"};
+    int [] imageProduto = {R.drawable.memoria, R.drawable.pc, R.drawable.headset, R.drawable.hdexterno, R.drawable.i58400, R.drawable.mousehyperx, R.drawable.ssd240kingston, R.drawable.ryzen5};
+    String [] nomeProduto = {"Memoria DDR4", "PC gamer", "HeadSet", "HD externo", "Processador", "Mouse", "SSD", "Processador"};
+    String [] descricaoProduto = {"Memoria HyperX DDR4 8GB", "PC gamer i7, GTX 1080, 16GB DDR4", "HeadSet HyperX", "HD Seagate USB 3.0 1TB Preto", "Processador Intel Core i5-9400F", "Mouse Gamer HyperX", "SSD Kingston A400, 240GB", "Processador AMD Ryzen 5"};
+    String [] precoProduto = {"R$ 280,00", "R$ 1.800,000" ,"R$ 480,00", "R$ 250,00", "R$ 1.500,00", "R$ 120,00", "R$ 240,00", "R$ 1.500,00"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +41,28 @@ public class InfoAtual extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if (position==1){
-
+                    Intent intent = new Intent(getApplicationContext(), InfoAtualPcGamer.class);
+                    startActivity(intent);
                 }
                 if (position==2){
 
                 }
                 if (position==3){
+
+                }
+                if (position==4){
+
+                }
+                if (position==5){
+
+                }
+                if (position==6){
+
+                }
+                if (position==7){
+
+                }
+                if (position==8){
 
                 }
             }
