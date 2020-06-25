@@ -1,4 +1,4 @@
-package com.example.speedbuy;
+package com.example.speedbuy.lojas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,21 +9,23 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.speedbuy.R;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class Leader extends AppCompatActivity {
+public class Americanas extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.blusasocial, R.drawable.camisabrasil, R.drawable.blusasocial1, R.drawable.calca1, R.drawable.calca2, R.drawable.vasco1, R.drawable.vasco2, R.drawable.vasco3};
-    String [] nomeProduto = {"Blusa", "Camisa", "Blusa", "Calça", "Calça", "Camisa", "Camisa", "Camisa"};
-    String [] descricaoProduto = {"Blusa Social", "Camisa Brasil", "Blusa Social", "Calça", "Calça", "Camisa do vasco", "Camisa do vasco", "Camisa do vasco"};
-    String [] precoProduto = {"R$ 100,00", "R$ 50,00" ,"R$ 120,00", "R$ 100,00", "R$ 120,00", "R$ 120,00", "R$ 120,00", "R$ 150,00"};
+    int [] imageProduto = {R.drawable.tv1, R.drawable.tv2, R.drawable.tv3, R.drawable.xiaomi8, R.drawable.cama, R.drawable.guardaroupa, R.drawable.geladeira, R.drawable.blusasocial};
+    String [] nomeProduto = {"TV", "TV", "TV", "Celular","Cama", "Guarda-roupa", "Geladeira", "Blusa"};
+    String [] descricaoProduto = {"Smart Tv Samsung", "Smart TV LG", "Smart TV Phillips", "Celular Xiaomi 8", "Cama de casal", "Guarda-roupa 5 portas", "Geladeira Inox", "Blusa Social"};
+    String [] precoProduto = {"R$ 2.000", "R$ 1.800,000" ,"R$ 2.100", "R$ 2.000,00", "R$ 800,00", "R$ 600,00", "R$ 1.000,00", "R$ 100,00"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_leader);
+        setContentView(R.layout.activity_americanas);
 
-        ListView listView = findViewById(R.id.list_view_leader);
+        ListView listView = findViewById(R.id.list_view_americanas);
 
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
@@ -52,12 +54,12 @@ public class Leader extends AppCompatActivity {
             CircleImageView circleImageView = view.findViewById(R.id.circle_image_loja);
             TextView textViewNomeLoja = view.findViewById(R.id.text_nome_loja);
             TextView textViewStar = view.findViewById(R.id.text_descricao);
-            TextView textViewPreco = view.findViewById(R.id.text_preco);
+            TextView textViewTime = view.findViewById(R.id.text_preco);
 
             circleImageView.setImageResource(imageProduto[i]);
             textViewNomeLoja.setText(nomeProduto[i]);
             textViewStar.setText(descricaoProduto[i]);
-            textViewPreco.setText(precoProduto[i]);
+            textViewTime.setText(precoProduto[i]);
 
             return view;
         }

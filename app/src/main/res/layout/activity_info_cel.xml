@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lojas.Americanas">
+    tools:context=".lojas.InfoCel">
 
     <ListView
-        android:id="@+id/list_view_americanas"
+        android:id="@+id/list_view_infocel"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
