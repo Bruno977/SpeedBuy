@@ -13,10 +13,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class Americanas extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.tv1, R.drawable.tv2, R.drawable.tv3};
-    String [] nomeProduto = {"TV", "TV", "TV"};
-    String [] descricaoProduto = {"Smart Tv Samsung", "Smart TV LG", "Smart TV Phillips"};
-    String [] precoProduto = {"R$ 2.000", "R$ 1.800,000" ,"R$ 2.100"};
+    int [] imageProduto = {R.drawable.tv1, R.drawable.tv2, R.drawable.tv3, R.drawable.xiaomi8, R.drawable.cama, R.drawable.guardaroupa, R.drawable.geladeira, R.drawable.blusasocial};
+    String [] nomeProduto = {"TV", "TV", "TV", "Celular","Cama", "Guarda-roupa", "Geladeira", "Blusa"};
+    String [] descricaoProduto = {"Smart Tv Samsung", "Smart TV LG", "Smart TV Phillips", "Celular Xiaomi 8", "Cama de casal", "Guarda-roupa 5 portas", "Geladeira Inox", "Blusa Social"};
+    String [] precoProduto = {"R$ 2.000", "R$ 1.800,000" ,"R$ 2.100", "R$ 2.000,00", "R$ 800,00", "R$ 600,00", "R$ 1.000,00", "R$ 100,00"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

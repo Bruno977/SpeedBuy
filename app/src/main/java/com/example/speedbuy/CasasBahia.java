@@ -13,10 +13,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CasasBahia extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.cama, R.drawable.geladeira, R.drawable.guardaroupa};
-    String [] nomeProduto = {"Cama", "Geladeira", "Guarda-roupa"};
-    String [] descricaoProduto = {"Cama de casal", "Geladeira inox", "Guarda-roupa 5 portas"};
-    String [] precoProduto = {"R$ 800,00", "R$ 1.800,000" ,"R$ 880,00"};
+    int [] imageProduto = {R.drawable.cama, R.drawable.geladeira, R.drawable.guardaroupa, R.drawable.tv1, R.drawable.tv2, R.drawable.xiaomi8, R.drawable.sofa};
+    String [] nomeProduto = {"Cama", "Geladeira", "Guarda-roupa", "TV", "TV", "Celular", "Sofa"};
+    String [] descricaoProduto = {"Cama de casal", "Geladeira inox", "Guarda-roupa 5 portas", "TV curved", "TV LG", "Celular Xiaomi 8", "Sofa Austin"};
+    String [] precoProduto = {"R$ 800,00", "R$ 1.800,000" ,"R$ 880,00", "R$ 2.000,00", "R$ 2.200,00", "R$ 1.300,00", "1.300,00"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

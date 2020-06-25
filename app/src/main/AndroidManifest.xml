@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".infoatual.InfoAtualPcGamer"></activity>
+        <activity android:name=".infoatual.InfoAtualHeadseat"></activity>
+        <activity android:name=".infoatual.InfoAtualPcGamer" />
         <activity android:name=".infoatual.InfoAtualMemoria" />
         <activity android:name=".CasasBahia" />
         <activity android:name=".Leader" />

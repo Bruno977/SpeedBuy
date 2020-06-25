@@ -11,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.speedbuy.infoatual.InfoAtualHeadseat;
 import com.example.speedbuy.infoatual.InfoAtualMemoria;
 import com.example.speedbuy.infoatual.InfoAtualPcGamer;
 
@@ -45,7 +46,8 @@ public class InfoAtual extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if (position==2){
-
+                    Intent intent = new Intent(getApplicationContext(), InfoAtualHeadseat.class);
+                    startActivity(intent);
                 }
                 if (position==3){
 
