@@ -4,18 +4,23 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".infoatual.InfoAtualHeadseat"></activity>
+        <activity android:name=".infoatual.InfoAtualHdExterno"></activity>
+        <activity android:name=".lojas.TonyLar" />
+        <activity android:name=".lojas.Maks" />
+        <activity android:name=".lojas.InfoCel" />
+        <activity android:name=".CasaComputador" />
+        <activity android:name=".infoatual.InfoAtualHeadseat" />
         <activity android:name=".infoatual.InfoAtualPcGamer" />
         <activity android:name=".infoatual.InfoAtualMemoria" />
-        <activity android:name=".CasasBahia" />
-        <activity android:name=".Leader" />
-        <activity android:name=".Americanas" />
-        <activity android:name=".InfoAtual" />
+        <activity android:name=".lojas.CasasBahia" />
+        <activity android:name=".lojas.Leader" />
+        <activity android:name=".lojas.Americanas" />
+        <activity android:name=".lojas.InfoAtual" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ListViewHome">
             <intent-filter>

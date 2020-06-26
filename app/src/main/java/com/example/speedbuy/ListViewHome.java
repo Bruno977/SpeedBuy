@@ -11,6 +11,14 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.speedbuy.lojas.Americanas;
+import com.example.speedbuy.lojas.CasasBahia;
+import com.example.speedbuy.lojas.InfoAtual;
+import com.example.speedbuy.lojas.InfoCel;
+import com.example.speedbuy.lojas.Leader;
+import com.example.speedbuy.lojas.Maks;
+import com.example.speedbuy.lojas.TonyLar;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ListViewHome extends AppCompatActivity {
@@ -48,6 +56,22 @@ public class ListViewHome extends AppCompatActivity {
                 }
                 if (position==3){
                     Intent intent = new Intent(getApplicationContext(), CasasBahia.class);
+                    startActivity(intent);
+                }
+                if (position==4){
+                    Intent intent = new Intent(getApplicationContext(), CasaComputador.class);
+                    startActivity(intent);
+                }
+                if (position==5){
+                    Intent intent = new Intent(getApplicationContext(), InfoCel.class);
+                    startActivity(intent);
+                }
+                if (position==6){
+                    Intent intent = new Intent(getApplicationContext(), Maks.class);
+                    startActivity(intent);
+                }
+                if (position==7){
+                    Intent intent = new Intent(getApplicationContext(), TonyLar.class);
                     startActivity(intent);
                 }
             }

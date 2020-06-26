@@ -1,4 +1,4 @@
-package com.example.speedbuy;
+package com.example.speedbuy.lojas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.speedbuy.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
