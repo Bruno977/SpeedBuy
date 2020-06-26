@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.speedbuy.R;
+import com.example.speedbuy.infoatual.InfoAtualHdExterno;
 import com.example.speedbuy.infoatual.InfoAtualHeadseat;
 import com.example.speedbuy.infoatual.InfoAtualMemoria;
 import com.example.speedbuy.infoatual.InfoAtualPcGamer;
@@ -51,7 +52,8 @@ public class InfoAtual extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if (position==3){
-
+                    Intent intent = new Intent(getApplicationContext(), InfoAtualHdExterno.class);
+                    startActivity(intent);
                 }
                 if (position==4){
 
