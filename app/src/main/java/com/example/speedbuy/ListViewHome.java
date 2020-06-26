@@ -2,7 +2,6 @@ package com.example.speedbuy;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,14 +15,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.speedbuy.fragments.Carrinho;
-import com.example.speedbuy.fragments.InfoAtual;
 import com.example.speedbuy.fragments.Perfil;
 import com.example.speedbuy.fragments.Search;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class list_view extends AppCompatActivity  {
+public class ListViewHome extends AppCompatActivity  {
 
     int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia, R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
     String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia"};
@@ -33,7 +31,7 @@ public class list_view extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_view);
+        setContentView(R.layout.activity_list_view_home);
 
         ListView listView = findViewById(R.id.list_view);
 
@@ -41,12 +39,7 @@ public class list_view extends AppCompatActivity  {
         listView.setAdapter(customAdapter);
 
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                getSupportFragmentManager().beginTransaction().add(R.id.linear_list, new InfoAtual()).commit();
-            }
-        });
+
 
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -84,7 +77,7 @@ public class list_view extends AppCompatActivity  {
                     return true;
 
                 case R.id.home:
-                    startActivity(new Intent (getApplicationContext(), list_view.class));
+                    startActivity(new Intent (getApplicationContext(), ListViewHome.class));
                     overridePendingTransition(0,0);
                     return true;
             }
@@ -114,7 +107,7 @@ public class list_view extends AppCompatActivity  {
 
         @Override
         public View getView(int i, View convertView, ViewGroup parent) {
-            View view = getLayoutInflater().inflate(R.layout.itens_list_view,null);
+            View view = getLayoutInflater().inflate(R.layout.itens_list_view_home,null);
 
             CircleImageView circleImageView = view.findViewById(R.id.circle_image);
             TextView textViewNomeLoja = view.findViewById(R.id.text_nome);

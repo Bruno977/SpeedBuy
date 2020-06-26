@@ -1,17 +1,14 @@
-package com.example.speedbuy;
+package com.example.speedbuy.fragments;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.speedbuy.R;
 
 public class BottomNavigattion extends Fragment {
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".list_view"
+    tools:context=".ListViewHome"
     >
 
 
@@ -30,7 +30,7 @@
 
     <fragment
         android:id="@+id/bottom_navigattion_inflate"
-        android:name="com.example.speedbuy.BottomNavigattion"
+        android:name="com.example.speedbuy.fragments.BottomNavigattion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_bottom_navigattion"
