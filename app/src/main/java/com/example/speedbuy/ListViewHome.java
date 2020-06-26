@@ -17,6 +17,13 @@ import android.widget.TextView;
 import com.example.speedbuy.fragments.Carrinho;
 import com.example.speedbuy.fragments.Perfil;
 import com.example.speedbuy.fragments.Search;
+import com.example.speedbuy.lojas.Americanas;
+import com.example.speedbuy.lojas.CasasBahia;
+import com.example.speedbuy.lojas.InfoAtual;
+import com.example.speedbuy.lojas.InfoCel;
+import com.example.speedbuy.lojas.Leader;
+import com.example.speedbuy.lojas.Maks;
+import com.example.speedbuy.lojas.TonyLar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
