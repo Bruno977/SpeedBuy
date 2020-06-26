@@ -18,6 +18,7 @@ import com.example.speedbuy.fragments.Carrinho;
 import com.example.speedbuy.fragments.Perfil;
 import com.example.speedbuy.fragments.Search;
 import com.example.speedbuy.lojas.Americanas;
+import com.example.speedbuy.lojas.CasaComputador;
 import com.example.speedbuy.lojas.CasasBahia;
 import com.example.speedbuy.lojas.InfoAtual;
 import com.example.speedbuy.lojas.InfoCel;
