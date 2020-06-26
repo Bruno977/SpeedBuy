@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".infoatual.InfoAtualHdExterno"></activity>
+        <activity android:name=".tonylar.TonyLarTv"></activity>
+        <activity android:name=".maks.MaksCama" />
+        <activity android:name=".infocel.InfoCelIphone" />
+        <activity android:name=".casacomputador.CasaComputadorMemoria" />
+        <activity android:name=".casasbahia.CasasBahiaCama" />
+        <activity android:name=".leader.LeaderBlusa" />
+        <activity android:name=".americanas.AmericanasTv" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".infoatual.InfoAtualHdExterno" />
         <activity android:name=".lojas.TonyLar" />
         <activity android:name=".lojas.Maks" />
         <activity android:name=".lojas.InfoCel" />
-        <activity android:name=".CasaComputador" />
+        <activity android:name=".lojas.CasaComputador" />
         <activity android:name=".infoatual.InfoAtualHeadseat" />
         <activity android:name=".infoatual.InfoAtualPcGamer" />
         <activity android:name=".infoatual.InfoAtualMemoria" />
@@ -29,9 +36,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
 
 </manifest>

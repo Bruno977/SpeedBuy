@@ -18,6 +18,7 @@ import com.example.speedbuy.fragments.Carrinho;
 import com.example.speedbuy.fragments.Perfil;
 import com.example.speedbuy.fragments.Search;
 import com.example.speedbuy.lojas.Americanas;
+import com.example.speedbuy.lojas.CasaComputador;
 import com.example.speedbuy.lojas.CasasBahia;
 import com.example.speedbuy.lojas.InfoAtual;
 import com.example.speedbuy.lojas.InfoCel;
@@ -30,10 +31,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ListViewHome extends AppCompatActivity  {
 
-    int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia, R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
-    String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia"};
-    String [] textStar = {" 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios", " 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios", " 5.0 - Informatica", " 4.0 - Utilitarios", " 4.5 - Utilitarios", " 3.5 - Utilitarios"};
-    String [] textTime = {" 20-30m", " 30-60m", " 1-2h"," 20-30m"," 20-30m", " 30-60m", " 1-2h"," 20-30m"," 20-30m", " 30-60m", " 1-2h"," 20-30m"};
+    int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.casacomputador, R.drawable.infocel, R.drawable.maks, R.drawable.tonylar};
+    String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Casa do computador", "InfoCel", "Mak's", "Tony Lar"};
+    String [] textStar = {" 5.0 - Informatica", " 4.0 - Produtos em gerais", " 4.5 - Acessorios", " 3.5 - Utilitarios", " 5.0 - Informatica", " 4.0 - Celulares", " 4.5 - Utilitarios", " 3.5 - Produtos em geral",};
+    String [] textTime = {" 20-30m", " 30-60m", " 1-2h"," 20-30m"," 20-30m", " 30-60m", " 1-2h"," 20-30m"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

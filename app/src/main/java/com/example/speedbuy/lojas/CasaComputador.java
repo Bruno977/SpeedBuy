@@ -1,13 +1,19 @@
-package com.example.speedbuy;
+package com.example.speedbuy.lojas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.speedbuy.R;
+import com.example.speedbuy.casacomputador.CasaComputadorMemoria;
+import com.example.speedbuy.casasbahia.CasasBahiaCama;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -27,6 +33,41 @@ public class CasaComputador extends AppCompatActivity {
 
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                if (position==0){
+                    Intent intent = new Intent(getApplicationContext(), CasaComputadorMemoria.class);
+                    startActivity(intent);
+                }
+                if (position==1){
+
+                }
+                if (position==2){
+
+                }
+                if (position==3){
+
+                }
+                if (position==4){
+
+                }
+                if (position==5){
+
+                }
+                if (position==6){
+
+                }
+                if (position==7){
+
+                }
+                if (position==8){
+
+                }
+            }
+        });
     }
     class  CustomAdapter extends BaseAdapter {
 
