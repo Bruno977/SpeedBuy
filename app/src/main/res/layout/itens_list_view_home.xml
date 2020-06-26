@@ -40,4 +40,5 @@
             android:id="@+id/text_time"></TextView>
     </LinearLayout>
         </LinearLayout>
+
 </LinearLayout>

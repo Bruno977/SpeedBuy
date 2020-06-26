@@ -13,7 +13,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class CasaComputador extends AppCompatActivity {
 
-    int [] imageProduto = {R.drawable.memoria, R.drawable.pc, R.drawable.headset, R.drawable.hdexterno, R.drawable.i58400, R.drawable.mousehyperx, R.drawable.ssd240kingston, R.drawable.ryzen5};
+    int [] imageProduto = {R.drawable.memoria, R.drawable.pc1, R.drawable.headset, R.drawable.hdexterno, R.drawable.i58400, R.drawable.mousehyperx, R.drawable.ssd240kingston, R.drawable.ryzen5};
     String [] nomeProduto = {"Memoria DDR4", "PC gamer", "HeadSet", "HD externo", "Processador", "Mouse", "SSD", "Processador"};
     String [] descricaoProduto = {"Memoria HyperX DDR4 8GB", "PC gamer i7, GTX 1080, 16GB DDR4", "HeadSet HyperX", "HD Seagate USB 3.0 1TB Preto", "Processador Intel Core i5-9400F", "Mouse Gamer HyperX", "SSD Kingston A400, 240GB", "Processador AMD Ryzen 5"};
     String [] precoProduto = {"R$ 280,00", "R$ 1.700,000" ,"R$ 480,00", "R$ 250,00", "R$ 1.500,00", "R$ 120,00", "R$ 240,00", "R$ 1.500,00"};

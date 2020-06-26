@@ -5,21 +5,37 @@
     android:id="@+id/linear_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ListViewHome"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/bloco"
+        android:layout_width="match_parent"
+        android:layout_height="695dp"
+        android:visibility="gone"
+        />
+
+
     <ListView
         android:id="@+id/list_view"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:divider="#FBFBFB"
         android:dividerHeight="1dp"
         android:listSelector="@drawable/list_selector"></ListView>
 
+
     <fragment
-        android:id="@+id/fragment2"
-        android:name="com.example.speedbuy.BottomNavigattion"
-        android:layout_width="wrap_content"
+        android:id="@+id/bottom_navigattion_inflate"
+        android:name="com.example.speedbuy.fragments.BottomNavigattion"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_bottom_navigattion"
-        android:layout_gravity="bottom"/>
-</LinearLayout>
+        />
+
+
+
+  </LinearLayout>
