@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".infoatual.InfoAtualMemoria">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/tv1"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Smart TV Philco LED 4K 55 PTV55F62SN - Bivolt"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="A Smart TV LED J5290, linha Series 5 da Samsung de 55 tem resolução Full HD, sistema operacional Orsay, conversor digital integrado, Wi-Fi, 2 entradas HDMI, 1 entrada USB e DLNA.Com ela, desfrute de um nível de realismo de entretenimento em casa maior do que nunca. Graças a resolução 2x maior do que as de TVs HD normais, a Samsung FHD TV oferece uma experiência visual de tirar o fôlego que o leva para além da tela em um mundo de imersão total. O Wide Color Enhancer Plus da Samsung melhora consideravelmente a qualidade de qualquer imagem e revela detalhes antes ocultos. As conexões HDMI e USB facilitam a ligação com os mais variados tipos de equipamentos."></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:text="R$ 2280,00 à vista"></TextView>
+            <Button
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/verdeBotao"
+                android:textColor="@color/colorWhite"
+                android:text="Adicionar no carrinho"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".lojas.InfoAtual">
 
+
     <ListView
         android:id="@+id/list_view_infoatual"
         android:layout_width="fill_parent"
@@ -14,5 +15,6 @@
         android:divider="#FBFBFB"
         android:dividerHeight="1dp"
         android:listSelector="@drawable/list_selector"></ListView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
