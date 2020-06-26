@@ -38,12 +38,50 @@ public class ListViewHome extends AppCompatActivity  {
         CustomAdapter customAdapter = new CustomAdapter();
         listView.setAdapter(customAdapter);
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-
+                if (position==0){
+                    Intent intent = new Intent(getApplicationContext(), InfoAtual.class);
+                    startActivity(intent);
+                }
+                if (position==1){
+                    Intent intent = new Intent(getApplicationContext(), Americanas.class);
+                    startActivity(intent);
+                }
+                if (position==2){
+                    Intent intent = new Intent(getApplicationContext(), Leader.class);
+                    startActivity(intent);
+                }
+                if (position==3){
+                    Intent intent = new Intent(getApplicationContext(), CasasBahia.class);
+                    startActivity(intent);
+                }
+                if (position==4){
+                    Intent intent = new Intent(getApplicationContext(), CasaComputador.class);
+                    startActivity(intent);
+                }
+                if (position==5){
+                    Intent intent = new Intent(getApplicationContext(), InfoCel.class);
+                    startActivity(intent);
+                }
+                if (position==6){
+                    Intent intent = new Intent(getApplicationContext(), Maks.class);
+                    startActivity(intent);
+                }
+                if (position==7){
+                    Intent intent = new Intent(getApplicationContext(), TonyLar.class);
+                    startActivity(intent);
+                }
+                if (position==8){
+                    
+                }
+            }
+        });
 
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
 
 
     }
