@@ -74,6 +74,9 @@ public class ListViewHome extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), TonyLar.class);
                     startActivity(intent);
                 }
+                if (position==8){
+                    
+                }
             }
         });
 
