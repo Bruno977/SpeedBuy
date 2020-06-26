@@ -47,7 +47,6 @@ public class ListViewHome extends AppCompatActivity  {
 
 
     }
-
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -85,6 +84,10 @@ public class ListViewHome extends AppCompatActivity  {
         }
 
     };
+
+
+
+
 
 
 

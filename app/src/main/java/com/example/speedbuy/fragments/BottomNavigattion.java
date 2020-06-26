@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package com.example.speedbuy.fragments;
 
 import android.os.Bundle;
@@ -10,8 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.speedbuy.R;
-=======
-package com.example.speedbuy;
 
 import android.os.Bundle;
 
@@ -25,7 +22,6 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
->>>>>>> 55cb01c0d1847417aab1c59dffbced4240d8cf40
 
 public class BottomNavigattion extends Fragment {
 
@@ -66,11 +62,8 @@ public class BottomNavigattion extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bottom_navigattion, container, false);
-<<<<<<< HEAD
-        
-=======
 
 
->>>>>>> 55cb01c0d1847417aab1c59dffbced4240d8cf40
+
     }
 }
