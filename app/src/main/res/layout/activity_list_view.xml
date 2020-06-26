@@ -6,7 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".list_view">
+    tools:context=".list_view"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/bloco"
+        android:layout_width="match_parent"
+        android:layout_height="695dp"
+        android:visibility="gone"
+        />
 
 
     <ListView
@@ -18,15 +27,15 @@
         android:dividerHeight="1dp"
         android:listSelector="@drawable/list_selector"></ListView>
 
+
     <fragment
-        android:id="@+id/fragment2"
+        android:id="@+id/bottom_navigattion_inflate"
         android:name="com.example.speedbuy.BottomNavigattion"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_bottom_navigattion"
-        android:layout_gravity="bottom"/>
+        />
 
 
 
-
-</LinearLayout>
+  </LinearLayout>

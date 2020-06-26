@@ -13,7 +13,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.speedbuy.R;
-import com.example.speedbuy.list_view;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -22,7 +21,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
  * A simple {@link Fragment} subclass.
  */
 public class InfoAtual extends Fragment {
-    int [] imageProduto = {R.drawable.memoria, R.drawable.pc, R.drawable.headset};
+    int [] imageProduto = {R.drawable.memoria, R.drawable.pc2, R.drawable.headset};
     String [] nomeProduto = {"Memoria DDR4", "PC gamer", "HeadSet"};
     String [] descricaoProduto = {"Memoria HyperX DDR4 8GB", "PC gamer i7, GTX 1080, 16GB DDR4", "HeadSet HyperX"};
     String [] precoProduto = {"R$ 280,00", "R$ 1.800,000" ,"R$ 480,00"};

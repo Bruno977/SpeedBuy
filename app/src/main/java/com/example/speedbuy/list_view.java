@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -12,18 +11,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.speedbuy.fragments.Carrinho;
 import com.example.speedbuy.fragments.InfoAtual;
-import com.example.speedbuy.fragments.ListViewOpen;
+import com.example.speedbuy.fragments.Perfil;
+import com.example.speedbuy.fragments.Search;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class list_view extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class list_view extends AppCompatActivity  {
 
     int [] imagesPerfil = {R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia,R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia, R.drawable.infoatual, R.drawable.americanas, R.drawable.leader, R.drawable.casasbahia};
     String [] nomeLoja = {"Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia", "Info Atual", "Americanas", "Leader", "Casas Bahia"};
@@ -50,7 +50,7 @@ public class list_view extends AppCompatActivity implements BottomNavigationView
 
         BottomNavigationView navigation = findViewById(R.id.bottom_navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        loadFragment(new Carrinho());
+
 
 
     }
@@ -63,7 +63,29 @@ public class list_view extends AppCompatActivity implements BottomNavigationView
             switch (item.getItemId()) {
                 case R.id.car:
                     Carrinho timesFragment = new Carrinho();
-                    getSupportFragmentManager().beginTransaction().replace(R.id.linear_list, timesFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.bloco, timesFragment).commit();
+                    FrameLayout fl = (FrameLayout) findViewById(R.id.bloco);
+                    fl.setVisibility(View.VISIBLE);
+
+                    return true;
+
+                case R.id.search:
+                    Search timesFragment2 = new Search();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.bloco, timesFragment2).commit();
+                    FrameLayout fl2 = (FrameLayout) findViewById(R.id.bloco);
+                    fl2.setVisibility(View.VISIBLE);
+                    return true;
+
+                case R.id.perfil:
+                    Perfil timesFragment3 = new Perfil();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.bloco, timesFragment3).commit();
+                    FrameLayout fl3 = (FrameLayout) findViewById(R.id.bloco);
+                    fl3.setVisibility(View.VISIBLE);
+                    return true;
+
+                case R.id.home:
+                    startActivity(new Intent (getApplicationContext(), list_view.class));
+                    overridePendingTransition(0,0);
                     return true;
             }
             return false;
@@ -71,31 +93,7 @@ public class list_view extends AppCompatActivity implements BottomNavigationView
 
     };
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        Fragment fragment = null;
 
-        switch (menuItem.getItemId()) {
-            case R.id.car:
-                fragment = new Carrinho();
-                break;
-
-        }
-        return loadFragment(fragment);
-
-    }
-
-    private boolean loadFragment(Fragment fragment) {
-        //switching fragment
-        if (fragment != null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(R.id.car, fragment)
-                    .commit();
-            return true;
-        }
-        return false;
-    }
 
     class  CustomAdapter extends BaseAdapter{
 
