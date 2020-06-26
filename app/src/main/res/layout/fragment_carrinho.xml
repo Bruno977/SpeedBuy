@@ -3,20 +3,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.Carrinho"
     android:orientation="vertical"
-    android:background="@color/colorWhite"
-    >
+    android:background="@color/colorWhite">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Compras"
+    android:textColor="#000000"
+    android:textSize="17dp"
+    android:gravity="center"
+    android:layout_marginTop="3dp">
 
+</TextView>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:textColor="#7E7C7C"
         android:text="Seu carrinho está vazio"
         android:textAlignment="center"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center"></TextView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/verdeBotao"
+        app:tabIndicatorColor="@color/verdeBotao"
+        android:layout_marginTop="30dp"
+
+       >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITENS"
+            android:layout_marginTop="30dp"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HISTÓRICO"
+            android:layout_marginTop="30dp"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RASTREAMENTO"
+            android:layout_marginTop="30dp"/>
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:src="@drawable/ic_baseline_local_grocery_store_24"></ImageView>
 
 </FrameLayout>
